@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaxiMe Бизнес Акаунти - Въвеждане на служители</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        taxime: {
+                            yellow: '#ffcb05',
+                            white: '#ffffff',
+                            black: '#000000',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .text-gradient {
+            background: linear-gradient(90deg, #ffcb05 0%, #ffd84d 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-white min-h-screen">
+    <!-- Header with TaxiMe logo -->
+    <header class="bg-taxime-yellow py-4 shadow-md">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <img src="images/taxime_logo.png" alt="TaxiMe Лого" class="h-12">
+            <h1 class="text-2xl md:text-3xl font-bold text-taxime-black">Бизнес Акаунти</h1>
+            <a href="/en" class="text-taxime-black font-medium hover:underline flex items-center">
+                <span>English</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-1">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 21l5.25-5.25-5.25-5.25m-10.5 10.5h7.5" />
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <!-- Welcome section with big typography -->
+    <section class="container mx-auto px-6 py-16 md:py-20">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-6">Добре дошли! 🎉</h2>
+            <p class="text-xl md:text-2xl mb-8">Вече сте част от <span class="text-gradient font-bold">TaxiMe Бизнес Акаунт</span></p>
+            <p class="text-lg md:text-xl text-gray-700">Вашата компания е направила пътуването по работа по-лесно и удобно с бизнес пътувания на TaxiMe.</p>
+        </div>
+    </section>
+
+    <!-- App installation instructions with bento grid layout -->
+    <section class="bg-gray-50 py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Как да започнете</h2>
+            
+            <!-- Bento grid layout -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Installation card -->
+                <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col h-full">
+                    <h3 class="text-2xl font-bold mb-4">1. Инсталирайте приложението TaxiMe</h3>
+                    <p class="mb-6">Изтеглете TaxiMe от App Store, Google Play или Huawei AppGallery.</p>
+                    <div class="grid grid-cols-2 gap-4 mt-auto">
+                        <div class="flex flex-col items-center justify-center col-span-2">
+                            <img src="images/appstore.png" alt="App Store" class="rounded-lg shadow-md w-3/4 mx-auto">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Account setup card -->
+                <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col h-full">
+                    <h3 class="text-2xl font-bold mb-4">2. Създайте своя акаунт</h3>
+                    <p class="mb-4">Регистрирайте се, за да получите достъп до вашия бизнес акаунт.</p>
+                    <!-- <p class="text-sm text-gray-600 mb-6">Ако вече имате акаунт в TaxiMe, просто влезте с вашите съществуващи идентификационни данни.</p> -->
+                    <div class="grid grid-cols-2 gap-4 mt-auto">
+                        <div class="flex flex-col items-center justify-center col-span-2">
+                            <img src="images/account.png" alt="Акаунт" class="rounded-lg shadow-md w-3/4 mx-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business account usage rules with modern skeuomorphic elements -->
+    <section class="container mx-auto px-6 py-16">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Използване на вашия бизнес акаунт</h2>
+            
+            <div class="bg-white rounded-xl shadow-lg p-6 mb-10 border border-gray-100">
+                <div class="flex flex-col md:flex-row items-center md:items-center gap-6">
+                    <!-- Image on the left -->
+                    <div class="md:w-2/5">
+                        <img src="images/trip_cards.png" alt="Екран за избор на фирмена карта" class="rounded-lg shadow-lg max-h-80">
+                    </div>
+                    
+                    <!-- Text on the right -->
+                    <div class="md:w-3/5">
+                        <div class="flex items-center mb-3 mx-auto max-w-md">
+                            <div class="bg-taxime-yellow rounded-full p-2 mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold">Изберете бизнес картата</h3>
+                        </div>
+                        <p class="mx-auto max-w-md px-10">При резервиране на пътуване ще видите фирмен начин на плащане във вашето приложение. Изберете го, за да таксувате пътуването към вашия бизнес акаунт.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-100">
+                <div class="flex flex-col md:flex-row items-center md:items-center gap-6">
+                    <!-- Image on the left -->
+                    <div class="md:w-2/5">
+                        <img src="images/trip.png" alt="Екран за проследяване на пътуването" class="rounded-lg shadow-lg max-h-80">
+                    </div>
+                    
+                    <!-- Text on the right -->
+                    <div class="md:w-3/5">
+                        <div class="flex items-center mb-3 mx-auto max-w-md">
+                            <div class="bg-taxime-yellow rounded-full p-2 mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold">Проследете вашето пътуване</h3>
+                        </div>
+                        <p class="mx-auto max-w-md px-10">Наблюдавайте пътуването си в реално време с приблизително време на пристигане и информация за шофьора.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Account Rules -->
+    <section class="bg-gray-50 py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Правила за бизнес акаунта</h2>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <ul class="space-y-6">
+                        <li class="flex">
+                            <span class="text-taxime-yellow mr-4 font-bold text-xl">•</span>
+                            <p>Бизнес пътуванията са само за пътувания, свързани с работа, включително пътуване до/от офиса и срещи, свързани с работата.</p>
+                        </li>
+                        <li class="flex">
+                            <span class="text-taxime-yellow mr-4 font-bold text-xl">•</span>
+                            <p>Всички бизнес пътувания трябва да съответстват на фирмената политика за пътувания.</p>
+                        </li>
+                        <li class="flex">
+                            <span class="text-taxime-yellow mr-4 font-bold text-xl">•</span>
+                            <p>Вашата компания може да е определила конкретни ограничения за време или местоположение за бизнес пътувания. Свържете се с вашия администратор за подробности.</p>
+                        </li>
+                        <li class="flex">
+                            <span class="text-taxime-yellow mr-4 font-bold text-xl">•</span>
+                            <p>Квитанциите автоматично се изпращат до вас и вашата компания за бизнес пътувания.</p>
+                        </li>
+                        <li class="flex">
+                            <span class="text-taxime-yellow mr-4 font-bold text-xl">•</span>
+                            <p>За всякакви проблеми с бизнес пътувания се свържете както с поддръжката на TaxiMe, така и с администратора на вашата компания.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Farewell section with text transition inspired design -->
+    <section class="container mx-auto px-6 py-16 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-bold mb-8">Готови за пътуване? 🚕</h2>
+            <p class="text-xl mb-12">Насладете се на безопасно, удобно и безпроблемно бизнес пътуване с TaxiMe!</p>
+            
+            <div class="inline-block bg-taxime-yellow px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <a href="#" class="text-taxime-black font-bold text-xl flex items-center">
+                    Отворете приложението TaxiMe
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 ml-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-taxime-black text-white py-10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0 flex items-center">
+                    <img src="images/taxime_logo.png" alt="TaxiMe Лого" class="h-8 mr-3">
+                    <span class="text-sm text-gray-300">Приложение №1 за таксита в България</span>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-sm text-gray-300 mb-2">© 2025 TaxiMe. Всички права запазени.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
